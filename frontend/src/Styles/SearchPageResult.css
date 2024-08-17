@@ -1,0 +1,170 @@
+.SearchPageResult {
+    position: relative;
+    box-sizing: border-box;
+    padding: 65px 50px; 
+    font-family: Helvetica, sans-serif;
+    border-radius: 20px;
+    justify-content: center;
+    border-style: solid;
+    min-width: 500px;
+    transition: transform 0.3s ease-in-out; 
+    max-width: 500px;
+}
+
+.SearchPageResult:hover {
+    
+    transform: scale(1.02); 
+}
+
+.AddToCartButton {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px; 
+    height: 30px;
+    line-height: 30px; 
+    text-align: center;
+    border-radius: 50%; 
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, transform 0.3s ease-in-out; 
+}
+
+.AddToCartButton:hover {
+    background-color: #0056b3;
+}
+
+.AddToCartButton:focus {
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 4px #5a01a7; 
+    transition: box-shadow 0.7s; 
+}
+
+.GPTExplainButton {
+    position: absolute;
+    bottom: 10px;
+    left: 36%;
+    transform: translateY(-50%);
+    width: 120px; 
+    height: 30px;
+    line-height: 30px; 
+    text-align: center;
+    border-radius: 20px; 
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, transform 0.3s ease-in-out; 
+}
+
+.GPTExplainButton:hover {
+    background-color: #0056b3;
+}
+
+.GPTExplainButton:focus {
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 4px #5a01a7; 
+    transition: box-shadow 0.7s; 
+}
+
+.ReturnButton {
+    position: absolute;
+    left: 20px;
+    top: 120px;
+    background-image: url('../assets/return.png'); 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-size: contain; 
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    filter: brightness(0) invert(1); 
+}
+
+.ReturnButton:hover {
+    transform: scale(1.1); /* Enlarges the button slightly on hover */
+}
+
+
+/* for RMPresult.js */
+.RMP_notshow {
+    display: none;
+}
+
+.RMP_show {
+    /* add something if you want */
+}
+
+.Grade_show{
+     /* add something if you want */
+}
+
+.Grade_notshow{
+    /* add something if you want */
+    display: none;
+}
+
+.confirmationMessage {
+    position: fixed; /* Fixed positioning relative to the viewport */
+    right: 20px; /* 20px from the right edge of the viewport */
+    top: 120px; /* 20px from the top edge of the viewport */
+    background-color: black;
+    color: white; 
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    z-index: 1000; /* Ensure it's above other content */
+    font-size: 0.9rem;
+    animation: slideIn 0.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.allAddedContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.allAddedIcon {
+    width: 100px; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+.allAddedMessage {
+    font-size: 24px; /* Adjust as needed */
+    font-weight: bold;
+    text-align: center;
+}
+
+.confirmationMessage {
+    color: white; /* Adjust as needed */
+    font-size: 16px; /* Adjust as needed */
+    margin-top: 10px;
+}
+
+.chart{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}

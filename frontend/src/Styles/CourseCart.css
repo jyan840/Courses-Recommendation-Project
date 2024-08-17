@@ -1,0 +1,164 @@
+/* Reset some default styles */
+body, h1, p, a, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*background-color: #f7f7f7; */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    filter: brightness(0) invert(1); 
+}
+
+#shopping-cart {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cart-item {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cart-item:hover {
+    transform: scale(1.02);
+}
+
+.cart-item h2 {
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cart-item p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #666;
+}
+
+.cart-note{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    textarea{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+.cart-note-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    img{
+        width: 5%; /* image size (cmnd /)*/
+        margin-left: 5px;
+        cursor: pointer;
+    }
+}
+
+.remove-item {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    text-align: center;
+}
+
+button#checkout-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 20px auto;
+    display: block;
+}
+
+button#checkout-button:hover {
+    background-color: #218838;
+}
+
+
+.searchButtonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.searchButton {
+    font-size: 1rem; /* Adjust the font size */
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.8;
+    color: black;
+    background-color: white;
+    border: none;
+    padding: 6px 12px; /* Adjust the padding to make the button smaller */
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.emptyCartContainer {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Take up the full height of the viewport */
+    text-align: center;
+    color: white; /* This makes all text inside white by default */
+    filter: brightness(0) invert(1);
+  }
+  
+  .NothingInCart {
+    font-size: 1.5rem; 
+    font-weight: bold;
+    margin-top: 20px; 
+  }
+  .iconAction {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Aligns the image nicely */
+    margin: 0 auto; /* Centers the image horizontally */
+    filter: brightness(0) invert(1);
+  }
+  

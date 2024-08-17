@@ -1,0 +1,86 @@
+
+.nav {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.5rem 0.3rem 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.nav a {
+    color: inherit; /* Ensures links inherit the white text color for readability */
+    text-decoration: none;
+    margin-top: 0;
+    padding: 0.5rem 0.5rem;
+    display: flex; /* Make link items flex containers */
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 4px; /* Add a small gap between the icon and text */
+}
+
+.nav a svg {
+    width: 20px; /* Make icons a bit smaller */
+    height: 20px; /* Make icons a bit smaller */
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-right: 1rem;
+    margin-left: auto;
+}
+
+.siteTitle {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.link {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav li.active {
+    color: #fff;
+}
+
+.nav li:hover {
+    color: #ddd;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    width: 80px;
+    height: 80px;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        justify-content: space-around;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .nav ul.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #0f0c29;
+    }
+}

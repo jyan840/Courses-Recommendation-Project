@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+requests = "*"
+python-dotenv = "*"
+mysqlclient = "==2.2.3"
+django-cors-headers = "*"
+ratemyprofessorapi = "*"
+openai = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

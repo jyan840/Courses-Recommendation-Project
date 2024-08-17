@@ -1,0 +1,108 @@
+/* For Home.js page */
+
+.searchBarContainer h1 {
+  font-size: 3rem;
+  color: #fff;
+  height: 17vh;
+  text-align: center;
+  position: relative;
+  top: 25vh;
+  margin-bottom: 2rem;
+}
+
+.searchBarWrapper, .searchBarContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 5rem auto 2rem;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+  div h1{
+    color: white;
+  }
+}
+
+
+.loadingMessage{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  font-size: 100px;
+}
+
+
+
+.rectangle-blocks-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjust as needed for alignment */
+  gap: 17px; /* Space between blocks */
+  margin-top: 25px; /* Space below the search bar */
+}
+
+.rectangle-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37%; /* Adjust for larger size */
+  padding: 20px; /* Adjust padding to make rectangles larger */
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.rectangle-block:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+
+
+.noResultsIconContainer {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Take up the full height of the viewport */
+  text-align: center;
+  color: white; /* This makes all text inside white by default */
+  filter: brightness(0) invert(1);
+}
+
+.courseNotFound {
+  font-size: 1.5rem; /* Adjust the size as needed */
+  font-weight: bold;
+  margin-top: 20px; /* Adjust the space between the icon and this text */
+}
+
+.tryDifferent {
+  font-size: 1rem; /* Smaller font size for this text */
+  margin-top: 10px; /* Adjust some space between the two texts */
+}
+
+
+/* support dark mode 
+@media (prefers-color-scheme: dark) {
+  .homePageContainer {
+      background-color: #1E40AF;
+  }
+}*/
+
+.blackHoleBackground {
+  min-height: 100vh; /* Ensure it covers the whole page vertically */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: radial-gradient(circle at top, #26004d 45%, #6b00d6 55%, #06000d 70%);
+}
